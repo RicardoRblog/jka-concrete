@@ -1,0 +1,360 @@
+@import url(banner.css);
+@import url(project.css);
+@import url(about.css);
+@import url(contacto.css);
+@import url(contact2.css);
+@import url(infoabout.css);
+@import url(contactos.css);
+@import url(lightbox.css);
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed';
+    scroll-behavior: smooth;
+    
+}
+
+iniciopagina{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+  }
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #f6752d;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #f6752d;
+    padding: 10px;
+    color: #fff;   
+    align-items: center;
+ 
+}
+
+.descripcion{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    
+    
+}
+
+
+
+.descripcion_logo{
+    height: auto;
+   
+    margin-left: -14px;
+    
+}
+
+
+
+.descripcion_texto{
+    text-align: center;
+    justify-content: center;
+    padding: 3px;    
+    margin-left: -14px;
+    
+}
+
+
+.logo{
+   height: 150px;
+
+}
+
+
+
+.descripcion h2{
+    text-transform: uppercase;
+    padding: 2px;
+    
+}
+
+.descripcion p{
+    text-transform: uppercase;
+    padding: 2px;
+    line-height: 2px;
+    letter-spacing: 4px;
+    text-align: center;
+   
+    
+}
+
+
+.menu {
+    max-width: 1200PX;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    text-transform:capitalize;
+    font-weight: bold;
+    padding: 10px ;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.mostrar-menu, .cerrar-menu{
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: none;
+    
+
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover, .mostrar-menu:hover, 
+.cerrar-menu:hover{
+    color: #282a5e;
+    
+    transition: all 0.4s;
+    
+    
+    
+    
+
+}
+
+#check{
+    display: none;
+}
+
+
+
+#video_prom{
+    width: 100%;    
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+}
+
+video {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.derechosautor{
+  background-color: #E9E5E5;
+}
+
+
+.derechosautor P{
+  font-size: 12PX;
+  color:#f6752d;
+  padding: 10px 0;
+  font-weight: 600;
+  
+}
+
+/*responsive*/
+
+
+@media(max-width: 768px){
+    
+    header{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+    }
+    
+    .descripcion{
+        margin: auto;
+
+        
+    }
+
+
+    .descripcion_logo{
+        height: auto;
+        padding: 0;
+    }
+    
+    .logo{
+        height: 80px;
+     
+     }
+
+    .descripcion h2{
+        font-size: 16px;
+        
+    }
+
+    .descripcion p{
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+
+
+    .mostrar-menu, .cerrar-menu {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:#f6752d;
+        top: 0;
+        right: -100%;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: all 0.4s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 10px;
+        
+        text-align: left;
+
+    }
+
+    .mostrar-menu{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        
+    }
+
+
+    .cerrar-menu{
+        position: absolute;
+        top: 30px;
+        right: 46%;
+
+        
+    }
+
+    #check:checked ~ .menu{
+        right: -40%;
+        top: 0;
+    }
+
+
+    video {
+      width: 100%;
+      height: 60vh;
+      padding: 0;
+      margin: auto;
+      object-fit: cover;
+      object-position: center;
+  
+  }
+  
+   
+
+}

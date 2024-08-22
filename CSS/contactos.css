@@ -1,0 +1,135 @@
+.foter {
+    background-image: url(../IMG/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+  
+    
+    
+}
+
+.dependencias{   
+    max-width: 1200px;
+    margin: auto;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    color: white;    
+    text-decoration: none;
+    height: 100%;
+    
+}
+
+.info-contacto{
+    padding: 7px ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    
+    
+}
+
+.info-contacto .dependenciacontacto{
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.info-contacto .personal{
+    width: 210px;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+   
+
+}
+
+.info-contacto .personal a,h4 {
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+
+.llamahoy{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.llamahoy a{
+    background-color: white;
+    color: #f6752d;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media(max-width: 760px){
+    .dependencias{
+        height: 100%;
+    }
+
+    .info-contacto .personal{
+        font-size: 10px;
+        width: 130px;
+        height: auto;
+        padding: 10px 10px;
+        margin: 5px 5px;
+        margin-left: 0;
+        
+    }
+    
+    .info-contacto .personal h4{
+        text-decoration: none;
+    }
+
+    .info-contacto .dependenciacontacto{
+
+        display: flex;
+        justify-content: center;
+        
+    
+    
+    }
+   
+    .llamahoy{
+        font-size: 11px;
+        
+    }
+    
+    .llamahoy a{
+        
+        text-align: center;
+        justify-content: center;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .derechos p{
+        font-size: 12px;
+                
+    }
+    
+    
+
+
+}
+

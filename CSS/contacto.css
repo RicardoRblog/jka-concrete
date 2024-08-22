@@ -1,0 +1,50 @@
+#contacto_us{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;    
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.resena{
+   padding: 20px;
+}
+
+.resena p{
+    text-align:justify;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+#contacto_us h3{
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+   
+    padding: 0;
+  
+  
+}
+
+
+@media(max-width: 768px){
+    .resena p{
+        font-size: 18px;
+        justify-content: center;
+        
+        align-items: center;
+        
+    }
+    #contacto_us h3{
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        text-transform: capitalize;
+      
+    }
+    
+
+
+}
